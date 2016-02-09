@@ -13,8 +13,6 @@ int powr(int x, int y)
 {
 	if (y == 0)
 		return 1;
-	if (y == 1)
-		return x;
 
 	return mult(x, powr(x, y-1));
 }
