@@ -40,7 +40,7 @@ Calcolare la somma dei voti degli studenti.
 int main()
 {
 	int length = 100000;
-	Studente* s = malloc(100000 * sizeof(Studente));
+	Studente* s = malloc(length * sizeof(Studente));
 
 	for (int i = 0; i < length; ++i)
 	{
