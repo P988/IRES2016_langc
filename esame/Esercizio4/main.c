@@ -1,7 +1,7 @@
 /*
 ### Esercizio 4 (2.5 punti)
 Creare una struttura Studente caratterizzata da un cognome e dal voto.
-Implementare le funzioni setCognome, getCognome, setVoto e getVoto che ne impostano e restituiscano rispettivamente il cognome e il numero di esami dello studente. Nota: non porrere limiti alla lunghezza del cognome.
+Implementare le funzioni setCognome, getCognome, setVoto e getVoto che ne impostano e restituiscano rispettivamente il cognome e il voto dello studente. Nota: non porrere limiti alla lunghezza del cognome.
 
 Creare un array di 100000 Studenti così denominati:
 ```sh
@@ -53,16 +53,6 @@ int main()
 		Studente_setCognome(s + i, cognome);
 		Studente_setVoto(s + i, (i + 1) % 10);
 	}
-
-	/*
-	for (int i = 0; i < 100000; ++i)
-	{
-		char cognome[15];
-		Studente_getCognome(s + i, cognome, 15);
-		int voto = Studente_getVoto(s + i);
-		printf("\nStudente %d:\nCognome: %s\nVoto: %d\n\n", i + 1, cognome, voto);
-	}
-	*/
 
 	int somma = 0;
 	for (int i = 0; i < 100000; ++i)
